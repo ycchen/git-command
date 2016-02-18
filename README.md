@@ -26,7 +26,7 @@ $ git stash pop # apply stash <revision> then remove the stash
 $ git stash
 
 #### Get a file from a specific commit
-$ git show {commit version):(path to the file}
+$ git show {commit version}:{path to the file}
 
 $ git show a7ba6e4:app/controllers/application_controller.rb
 
