@@ -1,7 +1,7 @@
-#### git log
+#### Git log
 $git log <path to the file>
 
-#### git diff file across branches
+#### Git diff file across branches
 $git diff branchA branchB <path to the file>
 
 #### How to get diff on a file between commit
