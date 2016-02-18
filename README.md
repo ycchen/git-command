@@ -9,11 +9,11 @@ $ git diff <commit number>:<path to a file> <commit number>:<path to a file>
 
 $ git diff 69140f2:lib/data_row_validator.rb fcb4ca8:lib/data_row_validator.rb
 
-$git diff 5cc287:pom.xml e8e420:pom.xml
+$ git diff 5cc287:pom.xml e8e420:pom.xml
 
-$git diff 3aa914:pom.xml 7476e1:pom.xml
+$ git diff 3aa914:pom.xml 7476e1:pom.xml
 
-$git diff 422bfd:pom.xml f92ad8:pom.xml
+$ git diff 422bfd:pom.xml f92ad8:pom.xml
 
 #### To see all changes to the file between 2 commits on commit-by-commit basis
 $ git log -u 69140f2..fcb4ca8 -- lib/data_row_validator.rb
