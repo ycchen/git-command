@@ -5,7 +5,7 @@ $ git log {path to the file}
 $ git diff branchA branchB {path to the file}
 
 #### How to get diff on a file between commit
-$ git diff {commit number}:{path to a file} {commit number>:<path to a file}
+$ git diff {commit number}:{path to a file} {commit number}:{path to a file}
 
 $ git diff 69140f2:lib/data_row_validator.rb fcb4ca8:lib/data_row_validator.rb
 
