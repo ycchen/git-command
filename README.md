@@ -1,65 +1,44 @@
-# git-command
-git-command-example
-Skip to content
- 
+#### git log
+$git log <path to the file>
 
-Search…
-All gists
-GitHub
-New gist
-@ycchen
- Edit
-  Delete
-  Star 0
-  @ycchenycchen/Git Commend examples SECRET
-Last active 3 minutes ago
-Embed  
-<script src="https://gist.github.com/ycchen/99302d8cd9fdd351bd42.js"></script>
-  Download ZIP
- Code  Revisions 3
-Git Command examples
-Raw  Git Commend examples
-## git log
-git log <path to the file>
+#### git diff file across branches
+$git diff branchA branchB <path to the file>
 
-## git diff file across branches
-git diff branchA branchB <path to the file>
+#### How to get diff on a file between commit
+$git diff <commit number>:<path to a file> <commit number>:<path to a file>
+$git diff 69140f2:lib/data_row_validator.rb fcb4ca8:lib/data_row_validator.rb
 
-###How to get diff on a file between commit
-git diff <commit number>:<path to a file> <commit number>:<path to a file>
-git diff 69140f2:lib/data_row_validator.rb fcb4ca8:lib/data_row_validator.rb
+$git diff 5cc287:pom.xml e8e420:pom.xml
+$git diff 3aa914:pom.xml 7476e1:pom.xml
+$git diff 422bfd:pom.xml f92ad8:pom.xml
 
-git diff 5cc287:pom.xml e8e420:pom.xml
-git diff 3aa914:pom.xml 7476e1:pom.xml
-git diff 422bfd:pom.xml f92ad8:pom.xml
+#### to see all changes to the file between 2 commits on commit-by-commit basis
+$git log -u 69140f2..fcb4ca8 -- lib/data_row_validator.rb
 
-## to see all changes to the file between 2 commits on commit-by-commit basis
-git log -u 69140f2..fcb4ca8 -- lib/data_row_validator.rb
+#### git stash
+$git stash list
+$git stash pop # apply stash <revision> then remove the stash
+$git stash
 
-## git stash
-git stash list
-git stash pop # apply stash <revision> then remove the stash
-$ git stash
+#### get a file from a specific commit
+$git show <commit version>:<path to the file> 
+$git show a7ba6e4:app/controllers/application_controller.rb
 
-## get a file from a specific commit
-git show <commit version>:<path to the file> 
-git show a7ba6e4:app/controllers/application_controller.rb
+#### get diff between local and remote
+$git diff origin/<branch name>
+$git diff origin/collect4
+$git diff origin/master
 
-## get diff between local and remote
-git diff origin/<branch name>
-git diff origin/collect4
-git diff origin/master
-
-## search within git log command
+#### search within git log command
 /<commit number>
 
 http://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message
 
-## get all change from log
-git log -p
+#### get all change from log
+$git log -p
 
-## search commit log
-git log --all --grep='Buid 0051'
+#### search commit log
+$git log --all --grep='Buid 0051'
 
-## if you seem to have lost your history, check the 'reflog' as your safety net
-git reflog
+#### if you seem to have lost your history, check the 'reflog' as your safety net
+$git reflog
