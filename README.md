@@ -12,15 +12,15 @@ $git diff 5cc287:pom.xml e8e420:pom.xml
 $git diff 3aa914:pom.xml 7476e1:pom.xml
 $git diff 422bfd:pom.xml f92ad8:pom.xml
 
-#### to see all changes to the file between 2 commits on commit-by-commit basis
+#### To see all changes to the file between 2 commits on commit-by-commit basis
 $git log -u 69140f2..fcb4ca8 -- lib/data_row_validator.rb
 
-#### git stash
+#### Stash
 $git stash list
 $git stash pop # apply stash <revision> then remove the stash
 $git stash
 
-#### get a file from a specific commit
+#### Get a file from a specific commit
 $git show <commit version>:<path to the file> 
 $git show a7ba6e4:app/controllers/application_controller.rb
 
@@ -29,16 +29,16 @@ $git diff origin/<branch name>
 $git diff origin/collect4
 $git diff origin/master
 
-#### search within git log command
+#### Search within git log command
 /<commit number>
 
 http://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-commit-message
 
-#### get all change from log
+#### Get all change from log
 $git log -p
 
-#### search commit log
+#### Search commit log
 $git log --all --grep='Buid 0051'
 
-#### if you seem to have lost your history, check the 'reflog' as your safety net
+#### If you seem to have lost your history, check the 'reflog' as your safety net
 $git reflog
