@@ -26,16 +26,16 @@ $ git stash pop # apply stash <revision> then remove the stash
 $ git stash
 
 #### Get a file from a specific commit
-$git show <commit version>:<path to the file> 
+$ git show <commit version>:<path to the file> 
 
-$git show a7ba6e4:app/controllers/application_controller.rb
+$ git show a7ba6e4:app/controllers/application_controller.rb
 
 #### get diff between local and remote
-$git diff origin/<branch name>
+$ git diff origin/<branch name>
 
-$git diff origin/collect4
+$ git diff origin/collect4
 
-$git diff origin/master
+$ git diff origin/master
 
 #### Search within git log command
 
@@ -47,7 +47,7 @@ http://stackoverflow.com/questions/7124914/how-to-search-a-git-repository-by-com
 $ git log -p
 
 #### Search commit log
-$git log --all --grep='Buid 0051'
+$ git log --all --grep='Buid 0051'
 
 #### If you seem to have lost your history, check the 'reflog' as your safety net
-$git reflog
+$ git reflog
